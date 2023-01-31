@@ -33,15 +33,21 @@ namespace LineCamparison
             double LenghtofLine2 = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
             Console.WriteLine($"Lenght of Second Line = {LenghtofLine2}");
 
-            if (LenghtOfLine1 == LenghtofLine2)
+
+            int Result = LenghtOfLine1.CompareTo(LenghtofLine2);
+
+            if (Result > 0)
             {
-                Console.WriteLine("First Line And Second Lines are Equal");
+                Console.WriteLine("First Line is Greater than Second Line");
+            }
+            else if (Result < 0)
+            {
+                Console.WriteLine("Second Line is Greater than First Line");
             }
             else
             {
-                Console.WriteLine("First Line And Second Lines are not Equal");
+                Console.WriteLine("First Line and Second Lines are Equal");
             }
-
         }
         static void Main(string[] args)
         {
