@@ -21,8 +21,8 @@ namespace LineCamparison
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Line Comparison");
-            LengthOfLine();
+             Console.WriteLine("Welcome to Line Comparison");
+             LengthOfLine();
         }
     }
 }
