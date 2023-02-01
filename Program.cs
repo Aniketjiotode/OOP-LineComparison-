@@ -1,12 +1,14 @@
 ﻿using System;
 
-namespace OOP_LineComparison
+namespace LineComparison
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Comparison Compare = new Comparison();
+            Compare.lineCompare(Compare.Line1(), Compare.Line2());
         }
     }
 }
+
